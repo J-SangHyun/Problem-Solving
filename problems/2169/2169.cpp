@@ -6,7 +6,6 @@ typedef vector<int> vint;
 
 int main(void) {
     int N, M, v_from_up, v_from_left, v_from_right;
-    bool visited;
     cin >> N >> M;
     vector<vint> value(N, vint(M));
     vector<vint> dp_left(N, vint(M));
