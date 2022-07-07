@@ -41,7 +41,7 @@ int main(void) {
             dp_right[i][j] = max(v_from_up, v_from_right) + value[i][j];
         }
     }
-    cout << max(dp_left[N-1][M-1], dp_right[N-1][M-1]) << endl;
+    cout << max(dp_left[N-1][M-1], dp_right[N-1][M-1]) << "\n";
     return 0;
 }
 
