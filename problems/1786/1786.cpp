@@ -3,8 +3,8 @@
 #include <vector>
 
 using namespace std;
-vector<int> kmp_search(string S, string W);
-vector<int> kmp_table(string W);
+vector<int> kmp_search(string &S, string &W);
+vector<int> kmp_table(string &W);
 
 int main(void) {
     string T, P;
@@ -20,7 +20,7 @@ int main(void) {
     return 0;
 }
 
-vector<int> kmp_search(string S, string W) {
+vector<int> kmp_search(string &S, string &W) {
     int j = 0, k = 0, nP = 0, n = S.size(), m = W.size();
     vector<int> T = kmp_table(W), P;
     
@@ -44,7 +44,7 @@ vector<int> kmp_search(string S, string W) {
     return P;
 }
 
-vector<int> kmp_table(string W) {
+vector<int> kmp_table(string &W) {
     int m = W.size(), pos = 1, cnd = 0;
     vector<int> T(m+1);
     T[0] = -1;
