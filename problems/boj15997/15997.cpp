@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 #include <map>
-#include <stdio.h>
+#include <cstdio>
 
 using namespace std;
 vector<double> p(4, 0);

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <cstdio>
 
 #define BUFFER_SIZE 1 << 20
 
