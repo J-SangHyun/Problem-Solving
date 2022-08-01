@@ -5,7 +5,8 @@ using namespace std;
 long long power_2(int sumAB, int K);
 
 int main(void) {
-    long long T, A, B, K, pow, minAB;
+    int T, A, B, K;
+    long long pow, minAB;
     cin >> T;
     
     for(int i = 0; i < T; i++) {
