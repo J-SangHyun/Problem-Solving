@@ -9,7 +9,7 @@
 using namespace std;
 int N;
 int gene_score(vector<vector<bool> > &board, vector<int> &gene);
-int cmp_gene(vector<int> &g1, vector<int> &g2);
+bool cmp_gene(vector<int> &g1, vector<int> &g2);
 
 int main(void) {
     cin >> N;
@@ -68,7 +68,7 @@ int gene_score(vector<vector<bool> > &board, vector<int> &gene) {
     return score;
 }
 
-int cmp_gene(vector<int> &g1, vector<int> &g2) {
+bool cmp_gene(vector<int> &g1, vector<int> &g2) {
     return g1[2*N] > g2[2*N];
 }
 
