@@ -34,7 +34,7 @@ int main(void) {
             }
         }
         else {
-            int n_gene = 0, mix_idx;
+            int n_gene = 0;
             vector<vector<int> > new_genes(N_GENE, vector<int>(2*N + 1));
             for(int i = 0; i < N_SURV - 1; i++) {
                 for(int j = i + 1; j < N_SURV; j++) {
